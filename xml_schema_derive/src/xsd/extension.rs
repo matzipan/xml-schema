@@ -38,7 +38,7 @@ impl Implementation for Extension {
 
     quote!(
       #[serde(rename="$text")]
-      pub content: #rust_type,
+      pub base: #rust_type,
       #attributes
     )
   }
